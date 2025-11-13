@@ -113,7 +113,13 @@
         }
         .contain-card {
             scroll-behavior: smooth;
-        }   
+        }
+        .container {
+            scroll-behavior: smooth;
+        }
+        .container::-webkit-scrollbar {
+          display: none;
+        } 
     </style>
 </head>
 <body>
@@ -272,14 +278,18 @@
                   <!-- Banners will be inserted here by JavaScript -->
               </div>
           </section>
-          <!-- product-list -->
+          <!-- product-list- -->
           <section class="my-7">
               <h2 class="text-[32px] my-3 relative font-bold inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-gray-300">Producti List</h2>
-                <!-- card product -->
+              
+              
+              <!-- card product-01 -->
               <div class="contain-card flex overflow-x-auto space-x-9 py-3 px-5 relative">
                     <!-- data show here from to javascript -->
               </div>
-              <!-- product -->
+
+
+              <!-- card product-02 -->
               <div class="grid grid-cols-1 mt-10 gap-4 md:grid-cols-3 ">
                 <section class="px-3 rounded-sm bg-[url(./access/image-product/macBookair-M3.jpg)] bg-cover bg-center bg-no-repeat min-h-55 flex gap-3 flex-col justify-end">
                   <div class="bg-primary px-2 w-fit rounded-md">
@@ -306,12 +316,23 @@
                   </div>
                 </section>
               </div>
+
+
+              <!-- card product-03 -->
+              <section class="container flex my-7 overflow-x-auto gap-7 p-4">
+            <!-- render from javascript -->
+              </section>
           </section>
+
       </div>
 
     </main>
     
     <!-- javascript -->
-    <script src="./access/script.js"></script>
+    <script src="./access/js/script.js"></script>
+    <!-- cardProduct-01 -->
+    <script src="./access/component/cardProduct01.js"></script>
+    <!-- cardProduct-03 -->
+    <script src="./access/component/cardProduct03.js"></script>
 </body>
 </html>
